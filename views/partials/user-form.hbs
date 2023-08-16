@@ -1,34 +1,35 @@
 <div class="col-6">
     <div class="form-floating mb-3">
         <label for="firstName" class="form-label">First Name</label>
-        <input type="text" placeholder="First Name" class="form-control" value="{{this.firstName}}" name="firstName"
+        <input type="text" placeholder="First Name" class="form-control" value="{{user.firstName}}" name="firstName"
             id="firstName">
     </div>
 </div>
 <div class="col-6">
     <div class="form-floating mb-3">
         <label for="lastName" class="form-label">Last Name</label>
-        <input type="text" placeholder="Last Name" name="lastName" value="{{this.lastName}}" class="form-control"
+        <input type="text" placeholder="Last Name" name="lastName" value="{{user.lastName}}" class="form-control"
             id="lastName">
     </div>
 </div>
 <div class="col-6">
     <div class="form-floating mb-3">
         <label for="email" class="form-label">Email</label>
-        <input type="email" placeholder="Email" name="email" value="{{this.email}}" class="form-control" id="email">
+        <input type="email" placeholder="Email" name="email" value="{{user.email}}" class="form-control" id="email">
     </div>
 </div>
 <div class="col-6">
     <div class="form-floating mb-3">
         <label for="phone" class="form-label">Phone</label>
-        <input type="tel" placeholder="Phone" name="phone" class="form-control" value="{{this.phone}}" id="phone">
+        <input type="tel" placeholder="Phone" name="phone" class="form-control" value="{{user.phone}}" id="phone">
     </div>
 </div>
+
 <div class="col-12">
     <div class="form-floating mb-3">
         <label for="comments" class="form-label">Comments</label>
         <textarea class="form-control" placeholder="What are you thinking?" name="comments" id="comments"
-            style="height: 200px;">{{this.comments}}</textarea>
+            style="height: 200px;">{{user.comments}}</textarea>
     </div>
 </div>
 <div class="col-12">

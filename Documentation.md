@@ -42,3 +42,21 @@ getShortCommnent(comment) {
 
 + View Users
 - Method get select * from users
+
++ find().lean() to accept for JSON object
+
+
+# Middleware 
++ ErrorHandler middleware:
+- This is middleware function to handle error occur during the execution of request-response cycle. 
+- Responsible for catching errors in subsequent middleware or route handlers
+- Types of Error 
+- It is the most important to avoid crushing your APP anytime an error occurs.
++ In the contex of Nodejs, Error are generally classified into two categories:
+## operational errors:
+- refer to runtime errors when an application encounters an unhandled exception or another code error. 
+- this is the challenging to diagnose as infinite loops, memory leaks, incorrect configuration systems, etc.
+## programmer errors which are also known as functional errors
+
+
+# Send email function 

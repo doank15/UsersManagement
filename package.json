@@ -5,18 +5,34 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "dev": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-handlebars": "^6.0.3",
-    "mysql": "^2.18.1"
+    "express-session": "^1.17.3",
+    "mongoose": "^5.9.16",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.9.1",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-google-oidc": "^0.1.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doank15/UsersManagement.git"
+  },
+  "bugs": {
+    "url": "https://github.com/doank15/UsersManagement/issues"
+  },
+  "homepage": "https://github.com/doank15/UsersManagement#readme"
 }

@@ -1,0 +1,34 @@
+{{#if user}}
+<h1>Send Email To {{user.firstName}} {{user.lastName}}</h1>
+<form method="POST" action="/view/sendEmail">
+    <div class="col-6">
+        <div class="form-floating mb-3">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" placeholder="First Name" class="form-control" value="{{user.firstName}}" name="firstName"
+                id="firstName">
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="form-floating mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="text" placeholder="Email Name" class="form-control" value="{{user.email}}" name="email"
+                id="email">
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="form-floating mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="form-floating mb-3">
+            <label for="message" class="form-label">Message</label>
+            <input type="text" placeholder="Something message..." class="form-control" name="message" id="message">
+        </div>
+    </div>
+    <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+</form>
+{{/if}}
