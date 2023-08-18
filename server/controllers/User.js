@@ -169,7 +169,30 @@ exports.sendEmail = async (req, res, next) => {
   }
 }
 
-
+let mailTransport = nodemailer.createTransport({
+  host: 'smtp.gmail.com',
+  service: "gmail",
+  secure: true,
+  port:465,
+  auth: {
+    user: process.env.USER_AUTH_MAIL,
+    pass: process.env.PASS_AUTH_MAIL
+  }
+});
 exports.sendEmailToUser = async (req, res, next) => {
-  
+  try {
+    const {email, subject, message} = req.body;
+    const mailOptions = {
+      from: process.env.USER_AUTH_MAIL,
+      to : email,
+      subject: subject,
+      text: message
+    }
+    await mailTransport.sendMail(mailOptions);
+    res.status(200).json({
+      message: "Email Sent Successfully"
+    });
+  }catch(err) {
+    next(err);
+  }
 }

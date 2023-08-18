@@ -24,5 +24,5 @@ router.get('/:id',protectRoute,userController.deleteUser);
 
 // send email
 router.get('/views/sendEmail/:id', protectRoute, userController.sendEmail);
-router.post('/views/sendEmail',protectRoute,userController.sendEmailToUser);
+router.post('/views/sendEmail',userController.sendEmailToUser);
 module.exports = router;
