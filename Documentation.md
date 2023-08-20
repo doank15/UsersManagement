@@ -59,7 +59,6 @@ getShortCommnent(comment) {
 ## programmer errors which are also known as functional errors
 
 
-# Send email function with SendGrid
+# Send email function with Nodemailer
 - Handlebars => Javascript Template engine for generate dynamic HTML pages
     + Convert JS functions into HTML templates and replace variables with actual data
-    + 
